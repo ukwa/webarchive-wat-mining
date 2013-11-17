@@ -25,7 +25,10 @@ The PIG scripts in `/src/pig/` can be executed on the cluster using the command 
 
 * `Prank.sh` uses the PageRank algorithm to calculate the relevance of crawled web resources. The script can be configured to do the calculation on different levels of granularity - like for example hosts or pages - based on adjusting a regular expression that extracts the relevant bits of the source URLs. The script also removes dangling pages (i.e. pages without outlinks to the crawled sites) before performing the page rank calculation. This is important to avoid a loss of the overall page rank weight (which must be 1) while calculating the page rank in multiple iterations. A core implementation of the used algorithm has been published [here](http://techblug.wordpress.com/2011/07/29/pagerank-implementation-in-pig/).   
 
+### Related work
 
+* https://webarchive.jira.com/wiki/display/Iresearch/Web+Archive+Analysis+Workshop
+* Extractor in commons-web.
 
 
 
